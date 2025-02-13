@@ -13,7 +13,7 @@ export class Banquier extends Person {
   })
   matricule_employee: string;
 
-  @ManyToMany(() => Client, (client) => client.banquiers)
-  @JoinTable()
+  
+  @ManyToMany(() => Client)
   clients: Client;
 }
